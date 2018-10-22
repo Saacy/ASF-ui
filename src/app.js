@@ -1,4 +1,5 @@
 import Vue from 'vue';
+import VueTour from 'vue-tour';
 
 import App from './App.vue';
 import router from './router';
@@ -6,10 +7,6 @@ import store from './store';
 
 import Notifications from './plugins/notifications';
 import Icons from './plugins/icons';
-
-import VueTour from 'vue-tour';
-
-require('vue-tour/dist/vue-tour.css');
 
 Vue.use(Notifications);
 Vue.use(Icons);
