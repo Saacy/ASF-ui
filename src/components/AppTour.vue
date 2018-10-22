@@ -10,10 +10,7 @@
 				steps: [
 					{
 						target: '.brand',
-						content: 'You can click here to access some hidden buttons.',
-						params: {
-							placement: 'right'
-						}
+						content: 'You can click here to access some hidden buttons.'
 					},
 					{
 						target: '.navigation-button',
