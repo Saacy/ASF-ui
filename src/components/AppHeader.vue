@@ -14,8 +14,6 @@
 				<font-awesome-icon icon="cogs"></font-awesome-icon>
 			</div>
 		</div>
-
-		<v-tour name="guideTour" :steps="steps"></v-tour>
 	</header>
 </template>
 
@@ -27,27 +25,13 @@
 	export default {
 		components: { NavigationBrand },
 		name: 'app-header',
-		data () {
-			return {
-				steps: [
-					{
-						target: '.brand',
-						content: 'You can click here to access some hidden buttons.'
-					},
-					{
-						target: '.navigation-button',
-						content: 'Click here to open or close the side navigation.'
-					}
-				]
-			}
-		},
 		methods: {
 			...mapActions({
 				toggleNavigation: 'layout/toggleNavigation',
 				toggleSideMenu: 'layout/toggleSideMenu'
 			}),
 			startTour() {
-				this.$tours['guideTour'].start()
+				this.$tours['introduction'].start()
 			}
 		}
 	};

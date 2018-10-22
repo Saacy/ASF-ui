@@ -1,5 +1,5 @@
 import Vue from 'vue';
-import VueTour from 'vue-tour';
+import VueTour from 'vue-tour/src/main';
 
 import App from './App.vue';
 import router from './router';

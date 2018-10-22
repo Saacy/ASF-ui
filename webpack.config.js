@@ -22,6 +22,9 @@ module.exports = async (env, argv) => {
 			path: path.resolve(__dirname, 'dist'),
 			publicPath: '/'
 		},
+		resolve: {
+			extensions: ['*', '.js', '.json', '.vue']
+		},
 		stats: !isProd ? 'verbose' : isDeploy ? 'minimal' : 'normal',
 		module: {
 			rules: [

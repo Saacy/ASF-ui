@@ -10,6 +10,7 @@
 		</section>
 
 		<app-modal></app-modal>
+		<app-tour></app-tour>
 		<vue-snotify></vue-snotify>
 	</div>
 </template>
@@ -20,6 +21,7 @@
 	import AppFooter from './components/AppFooter.vue';
 	import AppSideMenu from './components/AppSideMenu.vue';
 	import AppModal from './components/AppModal.vue';
+	import AppTour from './components/AppTour.vue';
 
 	import { mapGetters } from 'vuex';
 
@@ -29,7 +31,7 @@
 			title: 'ArchiSteamFarm',
 			titleTemplate: 'ASF | %s'
 		},
-		components: { AppHeader, AppNavigation, AppFooter, AppSideMenu, AppModal },
+		components: { AppHeader, AppNavigation, AppFooter, AppSideMenu, AppModal, AppTour },
 		computed: {
 			...mapGetters({
 				smallNavigation: 'layout/smallNavigation',
